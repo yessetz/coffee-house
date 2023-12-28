@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--Background-Body, #E1D4C9);
+    font-family: 'Roboto', sans-serif;
+    color: var(--Text-Dark, #403F3D);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 105%;
+}
+h1 .accent {
+    font-style: italic;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+}
+h2 .accent {
+    font-style: italic;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.caption {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 140%;
+}
+
+a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.link-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.burger-link {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.menu-item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    gap: 4px;
+    border-bottom: 1px solid transparent; /* Initial border as a placeholder for the underline */
+      transition: border-color 0.3s ease;
+}
+.menu-item:hover {
+    border-color: #403F3D;
+}
