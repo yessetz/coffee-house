@@ -49,31 +49,45 @@ a {
     text-decoration: none;
 }
 
+/* Menu Button */ 
 .link-button {
+    position: absolute;
     font-size: 16px;
     font-weight: 600;
     line-height: 150%;
 }
 
+.menu-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+    gap: 8px;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #403F3D;
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover::before {
+    gap: 4px;
+    width: 100%;
+}
+
+
 .burger-link {
     font-size: 32px;
     font-weight: 600;
     line-height: 125%;
-}
-
-.menu-item {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    gap: 4px;
-    border-bottom: 1px solid transparent; /* Initial border as a placeholder for the underline */
-      transition: border-color 0.3s ease;
-}
-.menu-item:hover {
-    border-color: #403F3D;
 }
