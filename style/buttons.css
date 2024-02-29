@@ -1,0 +1,232 @@
+
+/* Menu Button */ 
+.link-button {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.menu-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+    gap: 8px;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.menu-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #403F3D;
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover::before {
+    gap: 4px;
+    width: 100%;
+}
+
+
+.burger-link {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.tab-item {
+    display: inline-flex;
+    padding: 8px 16px 8px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    border-radius: 100px;
+    border: 1px solid var(--Border-Light, #C1B6AD);
+}
+.tab-item-icon {
+    display: flex;
+    padding: 3px 7px;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 100px;
+    background: var(--Border-Light, #C1B6AD); 
+}
+.tab-item-text {
+    color: var(--Text-Dark, #403F3D); 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.tab-item:hover {
+    background: var(--Background-Container, #665F55); 
+}
+.tab-item:hover .tab-item-icon {
+    background: var(--Background-Body, #E1D4C9); 
+}
+.tab-item:hover .tab-item-text {
+    color: var(--Text-Light, #E1D4C9); 
+}
+
+.tab-item:active {
+    background: var(--Background-Container, #665F55); 
+}
+.tab-item:active .tab-item-icon {
+    background: var(--Background-Body, #E1D4C9); 
+}
+.tab-item:active .tab-item-text {
+    color: var(--Text-Light, #E1D4C9); 
+}
+
+.button-primary {
+    display: flex;
+    max-width: 200px;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    border-radius: 100px;
+    border: 1px solid aqua;
+    background: var(--Background-Body, #E1D4C9); 
+}
+.button-primary-text {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.button-primary-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0; 
+    display: none;
+}
+
+.button-primary:hover .button-primary-icon {
+    display: block;
+}
+
+.button-secondary {
+    display: flex;
+    max-width: 200px;
+    padding: 10px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    border: 1px solid var(--Border-Dark, #665F55);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.button-secondary:hover {
+    background: var(--Background-Container, #665F55); 
+    color: var(--Text-Light, #E1D4C9); 
+}
+
+.button-app {
+    display: flex;
+    max-width: 160px;
+    align-items: center;
+    gap: 8px; 
+    padding: 12px 20px;
+    border-radius: 100px;
+    border: 1px solid var(--Border-Dark, #665F55);
+}
+
+.button-app-text {
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+.button-app-name {
+    font-size: 16px;
+    line-height: 150%;
+}
+.button-app:hover {
+    background: var(--Background-Container, #665F55); 
+    color: var(--Text-Light, #E1D4C9); 
+}
+.button-app:hover .color-change path {
+    fill: #E1D4C9;
+}
+
+
+.button-icon-dark {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid var(--Border-Dark, #665F55);  
+    transition: transform 0.3s ease;
+}
+.button-icon-dark:hover {
+    background: var(--Background-Container, #665F55); 
+    transform: translateX(5px); 
+}
+.button-icon-dark:hover .color-change path {
+    stroke: #E1D4C9;
+}
+
+.button-icon-light {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0; 
+    border-radius: 100px;
+    border: 1px solid var(--Border-Light, #C1B6AD);
+    transition: background-color 0.3s ease;
+}
+.button-icon-light:hover {
+    background: var(--Background-Body, #E1D4C9); 
+}
+.button-icon-light:hover .color-change path {
+    stroke: #403F3D;
+}
+
+.link-contact {
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px; 
+}
+.link-contact .color-change path {
+    stroke: #403F3D;
+}
+
+.link-contact::before {
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: #403F3D;
+    transition: width 0.5s ease;
+}
+
+.link-contact:hover::before {
+    gap: 4px;
+    width: 100%;
+}
