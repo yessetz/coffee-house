@@ -15,21 +15,22 @@
     text-decoration: none;
     margin-top: auto;
     margin-bottom: auto;
-
+    position: relative;
 }
 
-.menu-item::before {
+.menu-item::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
     width: 0;
     height: 2px;
     background-color: #403F3D;
-    transition: width 0.3s ease;
+    transition: width 0.3s ease, left 0.3s ease; 
+    transform: translateX(-50%);
 }
 
-.menu-item:hover::before {
+.menu-item:hover::after {
     gap: 4px;
     width: 100%;
 }
