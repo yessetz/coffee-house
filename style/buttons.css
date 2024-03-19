@@ -90,12 +90,12 @@
 .button-primary {
     display: flex;
     max-width: 200px;
+    width: 200px;
     padding: 20px 0px;
     justify-content: center;
     align-items: center;
     gap: 8px; 
     border-radius: 100px;
-    border: 1px solid aqua;
     background: var(--Background-Body, #E1D4C9); 
 }
 .button-primary-text {

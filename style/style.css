@@ -125,3 +125,69 @@ header {
     font-weight: 400;
     line-height: 150%; /* 24px */
 } 
+
+.favorite-coffee {
+    margin-top: 100px;
+}
+.favorite-header {
+    color: var(--Text-Dark, #403F3D);
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+.favorite-header-mark {
+    color: var(--Text-Accent, #B0907A); 
+    font-style: italic;
+}
+
+.slider {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; 
+}
+
+#slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.row-slider {
+    display: flex;
+    min-width: 480px;
+    max-width: 1152px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 1 0 0;
+}
+
+#slide-1 {
+    display: flex;
+    width: 1152px;
+    min-width: 480px;
+    max-width: 1162px;
+    flex-direction: column;
+    align-items: center;
+}
+#slide-2 {
+    display: flex;
+    width: 1152px;
+    min-width: 480px;
+    max-width: 1152px;
+    flex-direction: column;
+    align-items: center;
+}
+#slide-3 {
+    display: flex;
+    width: 1152px;
+    min-width: 480px;
+    max-width: 1152px;
+    flex-direction: column;
+    align-items: center;
+}
